@@ -2,13 +2,15 @@ export async function getDataByName(pokeName) {
 
     const pokemonData = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}/`)
     let res = await pokemonData.json()
-    //console.log(res)
+    console.log(res)
     let thePhoto = res.sprites.front_default
     document.getElementById('photoArea').innerHTML = `
                     <img src="${thePhoto}" width="300px" height="300px">
                     `;
 
+    let name = res.name
     let type = res.types[0].type.name
+    document.getElementById('name').innerHTML = `Name: ${name.charAt(0).toUpperCase() + name.slice(1)}`
     document.getElementById('type').innerHTML = `Type: ${type.charAt(0).toUpperCase() + type.slice(1)}`
 
     let abilities = res.abilities.map(abi => abi.ability.name)
