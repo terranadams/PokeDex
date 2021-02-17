@@ -1,0 +1,24 @@
+{
+  "name": "PokeDex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://terranadams:rosesarered4444@github.com/terranadams/PokeDex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/terranadams/PokeDex/issues"
+  },
+  "homepage": "https://github.com/terranadams/PokeDex#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "npm": "^7.5.4"
+  }
+}
