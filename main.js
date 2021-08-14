@@ -3,7 +3,7 @@ import { getDataByNumber } from "./pokeNumber.js"
 
 
 function getName() {
-    let pokeName = document.getElementById('pokeName').value
+    let pokeName = document.getElementById('pokeName').value.toLowerCase()
     getDataByName(pokeName)
 }
 
